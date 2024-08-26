@@ -1,0 +1,135 @@
+.container {
+    /* height: auto; */
+    width: 90%;
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.583);
+    border-radius: 20px;
+    margin: 2rem auto;
+    padding: 2rem 1rem;
+    overflow: hidden;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.container input {
+    height: 35px;
+    width: 70%;
+    outline: none;
+    border-radius: 12px;
+    border: none;
+    padding-left: 1rem;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.search-icon {
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: rgb(244, 236, 236);
+    margin-right: 0.5rem;
+}
+
+.cloud {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.cloud img {
+    margin-top: 0.5rem;
+    height: 100px;
+    width: 100px;
+}
+
+.cloud h3,
+.cloud p {
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+}
+
+.humidity,
+.speed {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    color: white;
+}
+
+.humidity img,
+.speed img {
+    height: 25px;
+    width: 25px;
+}
+
+.humidity h5,
+.speed h5 {
+    font-size: 1.2rem;
+}
+
+.humidity h6,
+.speed h6 {
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+}
+
+.footer {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 2rem;
+    }
+
+    .cloud img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .cloud h3,
+    .cloud p {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 70%;
+    }
+
+    .cloud img {
+        height: 140px;
+        width: 140px;
+    }
+
+    .cloud h3,
+    .cloud p {
+        font-size: 2.2rem;
+    }
+
+    .humidity h5,
+    .speed h5 {
+        font-size: 1.5rem;
+    }
+}
